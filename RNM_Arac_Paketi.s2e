@@ -1,0 +1,75 @@
+{
+	"extensionName": "RNM_Arac_Paketi",
+	"description": "Reha Necla Midilli Ortaokulu - Araç Kodlama Paketi",
+	"version": "1.0",
+	"author": "Cem ARIK(cem.arik@gmail.com)",
+	"homepage": "https://github.com/cem_arik",
+	"sort": 0,
+	"javascriptURL": "js/RNM_Arac_Paketi.js",
+	"firmware": "1.0",
+	"extensionPort": 0,
+	"blockSpecs": [
+
+
+
+        ["w",
+        "Sol İleri Pin %n Sol Geri Pin %n Sağ İleri Pin %n Sağ Geri Pin %n",
+        "initializeHareketPinleri",
+        "6",
+        "7",
+        "8",
+        "9",
+        {
+            "encode":"{d0}{d1}{d2}{d3}",
+            "inc":"",
+            "def":"",
+            "setup":"",
+            "work":"",
+            "loop":""
+        }
+
+
+        ],
+
+        [
+			"w",
+			"RNM_Bot %d.hareketYonu",
+			"setHareketYonu",
+			"İleri Git",
+			{
+				"encode":"{d0}",
+				"inc": "",
+				"def": "",
+				"setup": "",
+				"work": "",
+				"loop": ""
+			}
+		],
+
+		["w",
+		 "Aracı Durdur",
+		 "stopBot",
+		 {
+		    "encode":"",
+		    "inc":"",
+		    "def":"",
+		    "setup":"",
+		    "work":"",
+		    "loop":""
+		 }
+		 ],
+
+
+	],
+	"menus": {
+    "hareketYonu": ["İleri Git", "Geri Git", "Sağa Dön", "Sola Dön"]
+	},
+	"values": {
+
+	"İleri Git":1,
+	"Geri Git":-1,
+	"Sağa Dön" : 2,
+	"Sola Dön" :-2
+
+	}
+}
