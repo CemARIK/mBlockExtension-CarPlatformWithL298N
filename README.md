@@ -20,5 +20,3 @@ Radar için Servo Motor Pini :11  olarak ayarlanmıştır.
 
 HC-SR04 için Tetik Pini :13, Okuma Pini 12 olarak ayarlanmıştır.
 
-https://user-images.githubusercontent.com/8525759/75111342-d25af880-5649-11ea-8a28-a6db00ea037b.png
-
